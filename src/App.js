@@ -114,7 +114,7 @@ function App() {
           color="primary"
           onClick={function () {
             axios
-              .post("http://localhost:5000/submit", formData)
+              .post("https://thawing-taiga-48696.herokuapp.com/submit", formData)
               .then((response) => {
                 console.log("Success", response);
                 enqueueSnackbar("Success");
